@@ -14,19 +14,4 @@ int _putchar(char c);
 /* This is for print string */
 int prt_str(char *);
 
-/* This is for print decimal */
-int prt_dec(int value);
-
-/* This is for power function */
-int power(int base, int x);
-
-/* This is for converting number to decimal */
-long con2dec(int num, int base);
-
-/* This is for print binary */
-int prt_bry(int num);
-
-/* This is for unsigned integer */
-int prt_uns(unsigned int num);
-
 #endif /* MAIN_H */

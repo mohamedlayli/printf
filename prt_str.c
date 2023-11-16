@@ -9,7 +9,7 @@
 */
 int prt_str(char *string)
 {
-	int count = 0,i=0;
+	int count = 0, i = 0;
 
 	/* loop through each character in the string*/
 	while (string[i])
@@ -20,5 +20,6 @@ int prt_str(char *string)
 	}
 
 	/* return the total count of character printed */
+
 	return (count);
 }
