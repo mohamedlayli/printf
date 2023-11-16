@@ -2,13 +2,11 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
+/**
  * _printf - This is Custom printf function
  * @format: This is the format string
- *
  * Return: This is the number of printed characters
  */
-
 int _printf(const char *format, ...)
 {
 	int count = 0, i = 0;
@@ -26,17 +24,13 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%' && format[i + 1] != ' ')
 		{
-			if (format[i + 1] == 'c')
+			if (format[i + 1] == 'c' || format[i + 1] == '%')
 			{
 				count += _putchar(va_arg(data, int));
 			}
 			else if (format[i + 1] == 's')
 			{
 				count += prt_str(va_arg(data, char *));
-			}
-			else if (format[i + 1] == '%')
-			{
-				count += _putchar('%');
 			}
 
 			i += 2;
