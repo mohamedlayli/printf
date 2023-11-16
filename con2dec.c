@@ -6,7 +6,7 @@
  * @base: The base of the input number (8 or 16)
  * Return: Decimal
  */
-long long con2dec(int Number, int base)
+long con2dec(int Number, int base)
 {
 	int decimalNumber = 0, i = 0;
 

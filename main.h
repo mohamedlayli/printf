@@ -12,23 +12,21 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 
 /* This is for print string */
-int print_string(char *);
+int prt_str(char *);
 
 /* This is for print decimal */
-int print_decimal(int value);
+int prt_dec(int value);
 
 /* This is for power function */
-long long int power(int base, int x);
+int power(int base, int x);
 
 /* This is for converting number to decimal */
-long long convertToDecimal(int num, int base);
+long con2dec(int num, int base);
 
 /* This is for print binary */
-int print_binary(int num);
+int prt_bry(int num);
 
 /* This is for unsigned integer */
-int print_unsigned(unsigned int num);
-int print_octal(unsigned int num);
-int print_hexadecimal(unsigned int num, int uppercase);
+int prt_uns(unsigned int num);
 
 #endif /* MAIN_H */
