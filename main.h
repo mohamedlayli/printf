@@ -28,5 +28,7 @@ int print_binary(int num);
 
 /* This is for unsigned integer */
 int print_unsigned(unsigned int num);
+int print_octal(unsigned int num);
+int print_hexadecimal(unsigned int num, int uppercase);
 
 #endif /* MAIN_H */
